@@ -1,0 +1,80 @@
+.presentation{
+    padding-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    gap: 180px;
+}
+
+.presentation-left{
+    display: flex;
+    gap: 129px;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    margin: auto 0;
+}
+
+.presentation-left__title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.presentation-left__description{
+    max-width: 380px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.presentation-left__glowstick{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    bottom: 28px;
+    left: 0;
+}
+
+.presentation-left__glowstick-background{
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+    width: 100%;
+    height: 100%;
+}
+
+.presentation-left__glowstick::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-bottom: 4px solid #fff;
+    position: absolute;
+    top: 33px;
+    transform: rotate(120deg);
+    transform-origin: left;
+    left: 70px;
+}
+
+.presentation-right{
+    position: relative;
+}
+
+.presentation-right img{
+    border-radius: 50px;
+}
+
+.presentation-right__background{
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(125px);
+    transform: rotate(-105.26deg);
+    width: 660px;
+    height: 780px;
+    position: absolute;
+    z-index: -1;
+    left: -262px;
+    top: -257px;
+}

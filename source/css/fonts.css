@@ -1,0 +1,29 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('/source/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('/source/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Regular'), local('Noto-Sans-Regular'),
+        url('/source/fonts/NotoSans.woff2') format('woff2'),
+        url('/source/fonts/NotoSans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Bold'), local('Noto-Sans-Bold'),
+        url('/source/fonts/NotoSans-Bold.woff2') format('woff2'),
+        url('/source/fonts/NotoSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
