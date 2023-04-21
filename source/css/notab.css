@@ -3,7 +3,7 @@
 }
 
 .notab-phone{
-    background-image: url(/source/image/notabBackground.png);
+    background-image: url(./source/image/notabBackground.png);
     background-repeat: no-repeat;
     width: 100%;
     display: flex;

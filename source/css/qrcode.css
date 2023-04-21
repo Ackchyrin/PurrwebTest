@@ -8,7 +8,7 @@
 }
 
 .qrcode-background-left{
-    background-image: url(/source/image/qrcodeBackgroundLeft.png);
+    background-image: url(./source/image/qrcodeBackgroundLeft.png);
     background-repeat: no-repeat;
     width: 811px;
     height: 100%;
@@ -18,7 +18,7 @@
 }
 
 .qrcode-background-right{
-    background-image: url(/source/image/qrcodeBackgroundRight.png);
+    background-image: url(./source/image/qrcodeBackgroundRight.png);
     background-repeat: no-repeat;
     width: 733px;
     height: 100%;
@@ -107,7 +107,7 @@
     }
 
     .qrcode-background-left{
-        background-image: url(/source/image/qrcodeBackgroundLeftMobile.png);
+        background-image: url(./source/image/qrcodeBackgroundLeftMobile.png);
         height: 335px;
         background-size: cover;
         width: 100%;
@@ -115,7 +115,7 @@
     }
 
     .qrcode-background-right{
-        background-image: url(/source/image/qrcodeBackgroundRightMobile.png);
+        background-image: url(./source/image/qrcodeBackgroundRightMobile.png);
         height: 300px;
         background-size: cover;
         width: 94%;
