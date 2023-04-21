@@ -1,8 +1,9 @@
 .presentation{
-    padding-left: 100px;
+    padding: 0 10px 0 100px;
     margin-top: 50px;
     display: flex;
     gap: 180px;
+    overflow-x: clip;
 }
 
 .presentation-left{
@@ -37,6 +38,7 @@
     height: 125px;
     bottom: 28px;
     left: 0;
+    z-index: -1;
 }
 
 .presentation-left__glowstick-background{
@@ -53,10 +55,10 @@
     height: 3px;
     border-bottom: 4px solid #fff;
     position: absolute;
-    top: 33px;
+    top: 30px;
     transform: rotate(120deg);
     transform-origin: left;
-    left: 70px;
+    left: 100px;
 }
 
 .presentation-right{
@@ -67,7 +69,8 @@
     border-radius: 50px;
 }
 
-.presentation-right__background{
+.presentation-right::after{
+    content: "";
     background: rgba(250, 0, 255, 0.2);
     filter: blur(125px);
     transform: rotate(-105.26deg);
@@ -75,6 +78,76 @@
     height: 780px;
     position: absolute;
     z-index: -1;
-    left: -262px;
+    left: -130px;
     top: -257px;
+}
+
+@media screen and (max-width:1100px){
+
+    .presentation{
+        padding: 0 10px;
+        gap: initial;
+        justify-content: space-between;
+    }
+
+    .presentation-right{
+        width: 175px;
+    }
+
+    .presentation-right img{
+        position: absolute;
+        left: -30px;
+    }
+
+}
+
+@media screen and (max-width:900px){
+
+    .presentation-left{
+        gap: 30px;
+        align-items: initial;
+    }
+
+    .presentation-left__title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .presentation-left__description{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .presentation-left__glowstick{
+        bottom: -20px;
+        left: -50px;
+    }
+    
+    .presentation-left__glowstick::after{
+        display: none;
+    }
+
+    .presentation-right img{
+        width: 161px;
+        border-radius: 25px;
+        left: 0;
+    }
+
+    .presentation-right::after{
+        width: 360px;
+        height: 430px;
+        background: rgba(250, 0, 255, 0.5);
+        left: -230px;
+        top: -115px;
+    }
+
+}
+
+
+@media screen and (max-width:550px){
+
+    .presentation-right{
+        width: 123px;
+    }
+
 }

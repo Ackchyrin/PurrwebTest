@@ -1,0 +1,38 @@
+.application{
+    margin-top: 90px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.application div{
+    display: flex;
+    gap: 60px;
+    margin:30px auto;
+    width: fit-content;
+}
+
+@media screen and (max-width:700px){
+    
+    .application{
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .application div{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .application div a{
+        display: flex;
+    }
+    
+    .application div a svg{
+        width: 185px;
+        height: 60px;
+    }
+
+}

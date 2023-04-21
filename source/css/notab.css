@@ -1,0 +1,129 @@
+.notab{
+    margin-top: 590px;
+}
+
+.notab-phone{
+    background-image: url(/source/image/notabBackground.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-size: contain;
+}
+
+
+.notab-phone img{
+    z-index: 1;
+    position: relative;
+    top: -100px;
+}
+
+.notab-phone__arrow{
+    position: absolute;
+    right: calc(50% - 260px);
+    top: 15%;
+}
+
+.notab-phone__description{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    right: calc(50% - 400px);
+    top: 27%;
+}
+
+.notab-phone__background{
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.15;
+    filter: blur(155.784px);
+    border-radius: 476.034px;
+    transform: rotate(-0.55deg);
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.notab-information{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+.notab-information__title{
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+    max-width: 390px;
+}
+
+.notab-information__description{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    max-width: 280px;
+}
+
+.notab-phone__arrow-mobile{
+    display: none;
+}
+
+@media screen and (max-width:900px){
+
+    .notab{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 130px;
+    }
+
+    .notab-phone{
+        margin-top: 195px;
+    }
+
+    .notab-phone__arrow{
+        display: none;
+    }
+
+    .notab-phone img{
+        width: 181px;
+    }
+    
+    .notab-phone__arrow-mobile{
+        display: block;
+        right: calc(50% - 140px);
+        top: 60%;
+        position: absolute;
+    }
+
+    .notab-phone__description{
+        top: 90%;
+        right: calc(50% - 130px);
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .notab-information{
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 24px;
+        align-items: unset;
+    }
+
+    .notab-information__title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .notab-information__description{
+        font-size: 16px;
+        line-height: 22px; 
+    }
+
+}

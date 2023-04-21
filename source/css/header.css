@@ -28,4 +28,32 @@ header{
     opacity: .6;
 }
 
+@media screen and (max-width:1100px){
 
+    header{
+        justify-content: space-between;
+        padding: 40px 15px;
+    }
+
+    .header-logo img:first-child{
+        width: 52px;
+    }
+
+    .header-logo img:last-child{
+        width: 46px;
+    }
+
+    .header-login{
+        padding-bottom: 6px;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration: none;
+        margin-left: 0;
+    }
+
+    .header-login svg{
+        display: none;
+    }
+
+}

@@ -1,0 +1,120 @@
+.easing{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.easing-title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;  
+    margin-left: auto;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.easing-title span{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.easing-container{
+    position: relative;
+    margin: auto;
+}
+
+.easing-container__text{
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 22.8021px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 22px;
+    border: 0.7px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    background: #000000;
+}
+
+.easing-container__text:nth-child(1){
+    top: 204px;
+    right: 126px;
+}
+
+.easing-container__text:nth-child(2){
+    left: -24px;
+    top: 360px;
+}
+
+.easing-container__text:nth-child(3){
+    left: 198px;
+    bottom: 242px;
+}
+
+.easing-container__text:nth-child(4){
+    right: -12px;
+    bottom: 308px;
+}
+
+
+@media screen and (max-width:1000px){
+    
+    .easing-title{
+        font-size: 24px;
+        line-height: 29px;
+        margin: unset;
+        padding: 0 15px;
+    }
+
+    .easing-title span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .easing-container{
+        margin: unset;
+        margin-top: 145px;
+        width: 96%;
+        margin-bottom: 53px;
+    }
+
+    .easing-container img{
+        width: 100%;
+    }
+
+    .easing-container__text{
+        padding: 13px 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .easing-container__text:nth-child(1){
+        top: -75px;
+        right: unset;
+        left: 45px;
+    }
+
+    .easing-container__text:nth-child(2){
+        top: 19px;
+        left: unset;
+        right: -7px;
+    }
+
+    .easing-container__text:nth-child(3){
+        left: 30px;
+        bottom: 70px;
+    }
+
+    .easing-container__text:nth-child(4){
+        bottom: -52px;
+        right: -7px;
+    }
+
+}
+

@@ -1,0 +1,98 @@
+.mission{
+    display: flex;
+    padding-right: 205px;
+    justify-content: space-between;
+    margin-top: 240px;
+    overflow-x: clip;
+}
+
+.mission img{
+    margin-left: -290px;
+    border-radius: 75px;
+}
+
+.mission-title{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+    max-width: 330px;
+    position: relative;
+}
+
+.mission-title::after{
+    background: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 85px;
+    height: 85px;
+    z-index: -1;
+}
+
+.mission-title span{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:1300px){
+    
+    .mission{
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+
+    .mission img{
+        width: 500px;
+        margin-left: -110px;
+        border-radius: 50px;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width:750px){
+    
+    .mission{
+        flex-direction: column-reverse;
+        padding: 0 10px;
+        align-items: center;
+        gap: 160px;
+        margin-top: 110px;
+    }
+
+    .mission-title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .mission-title span{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .mission img{
+        margin-left: 0;
+        width: unset;
+        border-radius: 30px;
+    }
+
+    .mission-title::after{
+        left: 0;
+    }
+
+}

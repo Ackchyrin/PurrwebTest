@@ -1,0 +1,126 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 110px 85px;
+    overflow: clip;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.footer-left__contanct{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer-left__contanct a{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.footer-left__contanct a:hover{
+    opacity: .6;
+}
+
+.footer-left__contanct a:visited{
+    color: #FFFFFF;
+}
+
+.footer-left__copyright{
+    margin-top: 5px;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer-left__background{
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(5.78deg);
+    width: 405px;
+    height: 410px;
+    bottom: -250px;
+    left: -130px;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-right a{
+    text-decoration: none;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+.footer-right a:hover{
+    opacity: .6;
+}
+
+.footer-right a:visited{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:900px){
+    
+    footer{
+        flex-direction: column-reverse;
+        padding: 64px 15px 24px;
+        gap: 58px;
+    }
+
+    .footer-right{
+        align-items: center;
+        gap: 14px;
+    }
+
+    .footer-right a{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .footer-left{
+        align-items: center;
+        gap: 9px;
+    }
+
+    .footer-left__logo svg{
+        width: 71px;
+        height: 14px;
+    }
+
+    .footer-left__contanct{
+        flex-direction: unset;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 8px;
+    }
+
+    .footer-left__copyright{
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 0;
+    }
+
+}

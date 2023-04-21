@@ -1,0 +1,190 @@
+.get{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.get-title{
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.get-title span:first-child{
+    margin-top: 25px;
+}
+
+.get-title span{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.get-title p{
+    display: none;
+}
+
+.get-title__background{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(125px);
+    transform: rotate(5.78deg);
+    left: -100px;
+    top: -130px;
+}
+
+.get-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 850px;
+    padding: 0 15px;
+    margin: auto;
+    width: 100%;
+}
+
+.get-container input{
+    padding: 29px 23px;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    width: 100%;
+    transition: .4;
+}
+
+.get-container input::placeholder{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #BFBFBF;
+}
+
+.get-container div{
+    display: flex;
+    gap: 24px;
+}
+
+.get-container textarea{
+    resize:none;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    outline: none;
+    height: 200px;
+    padding: 26px 23px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    transition: .4;
+}
+
+.get-container textarea::placeholder{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #BFBFBF;
+}
+
+.get-button{
+    margin: 60px auto;
+    text-align: center;
+    padding: 25px 0;
+    max-width: 400px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #FFFFFF;
+    transition: .4s;
+    width: 100%;
+}
+
+.get-button:hover{
+    opacity: .6;
+}
+
+
+.get-button.deactive{
+    pointer-events: none;
+    cursor: default;
+    opacity: .4;
+}
+
+@media screen and (max-width:700px){
+
+    .get{
+        gap: 40px;
+    }
+
+    .get-title{
+        padding: 0 26px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .get-title span{
+        display: none;
+    }
+
+    .get-title p{
+        display: block;
+        font-family: 'Noto Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+
+    .get-container{
+        gap: 16px;
+    }
+
+    .get-container input{
+        padding: 18px 11px;
+    }
+    
+    .get-container textarea::placeholder,
+    .get-container input::placeholder{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .get-container div{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .get-container textarea{
+        height: 140px;
+        padding: 18px 11px;
+    }
+
+    .get-button{
+        margin-top: 10px;
+    }
+    
+}

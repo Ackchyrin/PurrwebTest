@@ -64,3 +64,18 @@
 .cookie-accept:hover{
     opacity: .6;
 }
+
+@media screen and (max-width:900px){
+
+    .cookie{
+        padding: 21px 15px;
+        gap: 73px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .cookie-accept{
+        max-width: 92px;
+    }
+
+}

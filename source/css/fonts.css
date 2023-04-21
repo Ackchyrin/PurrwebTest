@@ -1,7 +1,6 @@
 @font-face{
     font-family: 'Montserrat';
-    src: local('Montserrat Bold'), local('Montserrat-Bold'),
-        url('/source/fonts/Montserrat-Bold.woff2') format('woff2'),
+    src:url('/source/fonts/Montserrat-Bold.woff2') format('woff2'),
         url('/source/fonts/Montserrat-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face{
     font-family: 'Noto Sans';
-    src: local('Noto Sans Regular'), local('Noto-Sans-Regular'),
-        url('/source/fonts/NotoSans.woff2') format('woff2'),
+    src:url('/source/fonts/NotoSans.woff2') format('woff2'),
         url('/source/fonts/NotoSans.woff') format('woff');
     font-weight: 400;
     font-style: normal;
@@ -20,10 +18,36 @@
 
 @font-face{
     font-family: 'Noto Sans';
-    src: local('Noto Sans Bold'), local('Noto-Sans-Bold'),
-        url('/source/fonts/NotoSans-Bold.woff2') format('woff2'),
+    src:url('/source/fonts/NotoSans-Bold.woff2') format('woff2'),
         url('/source/fonts/NotoSans-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src:url('/source/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/source/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+      font-family: 'Avenir';
+      src:url('/source/fonts/Avenir-Medium.woff2') format('woff2'),
+          url('/source/fonts/Avenir-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face{
+      font-family: 'Avenir';
+      src:url('/source/fonts/Avenir-Heavy.woff2') format('woff2'),
+          url('/source/fonts/Avenir-Heavy.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
 }
